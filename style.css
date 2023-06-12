@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html{
+    background-image: url(img/BG.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-position: top;
+    background-color: #080011;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.perfil{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.perfil img{
+    width: 100px;
+}  
+
+.perfil h1{
+    color: #fff;
+    font-family: 'Bebas Neue';
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    border-right: 3px solid;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(15), blinking 0.5s infinite step-end alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.frase{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.frase h1{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.opcoes img{
+    width: 350px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.opcoes img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .perfil{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .perfil img{
+        width: 80px;
+    }  
+    
+    .perfil h1{
+        color: #fff;
+        font-family: 'Bebas Neue';
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        margin-top: 10px;
+        border-right: 3px solid;
+        width: 15ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3s steps(15), blinking 0.5s infinite step-end alternate;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes typing{
+        from{
+            width: 0;
+        }
+    }
+    
+    @keyframes blinking{
+        50%{
+            border-color: transparent;
+        }
+    }
+    
+    .frase{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .frase h1{
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 14px;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .opcoes{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .opcoes img{
+        width: 250px;
+        margin-top: 15px;
+        transition: transform 0.3s ease;
+    }
+    
+    .opcoes img:hover{
+        transform: scale(1.1);
+    }
+}
